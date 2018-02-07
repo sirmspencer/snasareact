@@ -1,3 +1,11 @@
 import React from 'react'
 
-t
+class Form extends React.Component {
+    render() {
+        return (
+        <p> Test <p />
+        )
+    }
+}
+
+export default Form
