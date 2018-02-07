@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Form extends React.Component {
+class Formholder extends React.Component {
     render() {
         return (
         <p> Test <p />
@@ -8,4 +8,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form
+export default Formholder
