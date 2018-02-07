@@ -6,4 +6,4 @@ import Formholder from './components/form';
 
 import StorePicker from './components/StorePicker';
 
-render(<Formholder/>, document.querySelector('#main'));
+// render(<Formholder/>, document.querySelector('#main'));
