@@ -2,8 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Formholder from './components/Formholder';
+import ReactForm from './components/ReactForm';
 
 
 
-render(<Formholder/>, document.querySelector('#main'));
+render(<ReactForm/>, document.querySelector('#main'));
