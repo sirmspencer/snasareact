@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 class Formholder extends React.Component {
     render() {
-        return ("")
+        return <p>Test</p>
     }
 }
 
-export default Formholder
+export default Formholder;

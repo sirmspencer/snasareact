@@ -2,8 +2,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import Formholder from './components/form';
+import Formholder from './components/Formholder';
 
-import StorePicker from './components/StorePicker';
 
-// render(<Formholder/>, document.querySelector('#main'));
+
+render(<Formholder/>, document.querySelector('#main'));
