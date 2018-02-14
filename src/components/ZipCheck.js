@@ -26,6 +26,7 @@ class ZipCheck extends React.Component {
 
     render() {
         let successrender = null;
+        const todisable = this.state.success ? 'disabled' : ''
         if (this.state.success) {
             successrender = (
                 <form className = "success" onSubmit={(e) => this.clearzip(e)}>
@@ -36,9 +37,10 @@ class ZipCheck extends React.Component {
         }
         return (
         <div>
-        <form className = "ZipCheck" onSubmit={(e) => this.checkzip(e)}> 
-            <input  ref={(input) => this.zipentered = input} type="text" placeholder="Zip Code" />
-            <button type="submit">Check Zip Code</button>
+        <form className = "ZipCheck" onSubmit={(e) => this.checkzip(e)}  > 
+                <input  ref={(input) => this.zipentered = input} type="text" placeholder="Zip Code" disabled={todisable}/>
+                <button type="submit" disabled={todisable}>Check Zip Code</button>
+            
         </form>
             {successrender}
         </div>
