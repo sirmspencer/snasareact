@@ -1,27 +1,31 @@
 // let's go!
 import React from 'react';
 
+
 class ZipCheck extends React.Component {
-/*     constructor() {
-        super()
-    } */
+    constructor() {
+        super();
+    
+        this.checkzip = this.checkzip.bind(this);
+    
+      }
     state = {
-       success: false,
-       zip: 0  
+       success: false
     }
 
     checkzip(e) {
-        e.preventDefault()       
-        console.log(this.zipentered.value)
-        if (this.zipentered.value>100){
-            this.setState({success: true, zip:this.zipentered.vaue})
-
+        e.preventDefault() 
+        let thiszip = this.zipentered.value
+        if (thiszip.length === 5 && !isNaN(parseFloat(thiszip)) && isFinite(thiszip)){
+            this.setState({success: true})
+            this.props.setZip(thiszip)
         }
     }
     
     clearzip(e) {
         e.preventDefault()    
-        this.setState({success: false,zip:0})
+        this.setState({success: false})
+        this.props.setZip("")
     }
 
     render() {
