@@ -15,10 +15,12 @@
     "stylus": "0.54.5"
   },
   "dependencies": {
+    "flexbox-react": "^4.4.0",
     "history": "4.7.2",
     "re-base": "3.2.2",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-native": "^0.54.0",
     "react-router": "4.2.0",
     "react-transition-group": "^2.2.1"
   },
@@ -33,5 +35,4 @@
   "eslintConfig": {
     "extends": "/.eslintrc.json"
   }
-
 }
